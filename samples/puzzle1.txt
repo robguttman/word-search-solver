@@ -1,0 +1,19 @@
+** WORD SEARCH **
+
+C,S,M,H,L,X,G,P,J,R,Z,H
+G,O,A,T,W,D,Z,I,Q,E,W,D
+B,W,E,P,C,O,F,G,N,P,X,A
+C,A,U,B,A,G,V,C,D,S,W,N
+P,Y,Z,J,S,D,W,M,O,X,K,T
+J,V,F,P,K,F,A,S,N,S,Z,P
+W,P,G,X,A,W,Z,B,K,H,N,E
+J,T,U,R,T,L,E,T,E,O,F,U
+U,S,I,L,F,V,R,Z,Y,R,L,R
+E,M,V,A,H,S,H,W,L,S,D,P
+J,O,Z,Q,Z,Q,J,M,Y,E,Z,E
+S,H,E,E,P,C,A,T,N,R,B,Q
+
+"Find these words: CAT, DOG, DONKEY, GOAT, HORSE, PIG, SHEEP, TURTLE"
+"* Words can go E, and S."
+
+"Answer Key: CAT E @ (12, 6), DOG S @ (2, 6), DONKEY S @ (4, 9), GOAT E @ (2, 1), HORSE S @ (7, 10), PIG S @ (1, 8), SHEEP E @ (12, 1), TURTLE E @ (8, 2)"

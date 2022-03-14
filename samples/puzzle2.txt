@@ -1,0 +1,32 @@
+** WORD SEARCH **
+
+V,D,Z,D,L,S,G,I,Y,E,V,D,Y,U,E,Y,B,O,H,D,S,X,V,K,S
+T,Y,E,J,C,V,C,A,T,Q,G,Q,A,H,M,P,W,Y,R,L,O,P,J,D,B
+Q,O,T,S,F,K,W,K,G,Y,I,H,W,N,J,R,G,J,Q,B,D,G,O,M,I
+P,S,Y,M,E,Y,M,Z,J,E,U,T,S,G,B,S,V,T,Z,P,W,R,G,B,C
+W,Q,J,H,R,H,I,B,R,G,J,Q,I,F,U,R,E,Q,B,Q,A,J,I,J,H
+O,Y,O,L,A,B,E,Y,F,L,O,N,G,S,Z,F,H,R,K,H,K,Q,P,T,Y
+L,T,R,P,I,Y,P,Z,S,V,W,V,J,X,B,R,M,L,N,W,O,J,Z,G,S
+A,B,V,M,X,M,B,H,B,G,N,K,W,C,L,J,N,X,M,L,U,R,Q,J,Z
+F,Y,E,K,Y,Z,V,X,M,I,F,G,B,E,M,Q,F,D,P,A,F,X,S,D,U
+S,L,G,C,Q,P,Y,W,N,W,Q,R,A,O,R,N,O,V,S,H,Z,C,B,E,V
+Q,D,Q,A,T,D,Q,A,G,U,D,U,Y,M,F,A,R,F,J,N,W,R,S,F,S
+W,L,X,O,H,Y,T,Y,R,X,S,X,H,U,H,T,W,B,O,M,A,G,V,L,M
+E,I,G,Z,C,I,W,D,T,L,O,V,D,X,B,S,J,P,I,Q,W,H,U,K,C
+Q,O,M,N,K,R,H,Z,V,E,Y,P,S,P,Q,G,F,Z,E,A,D,B,L,E,A
+D,R,G,B,S,M,C,Y,R,X,U,H,V,R,W,T,S,P,K,O,W,G,A,F,G
+S,H,E,E,P,V,Q,D,Z,K,V,L,I,L,E,P,N,J,N,R,M,T,J,I,E
+K,X,L,G,R,Z,U,W,P,L,X,Y,V,A,F,W,M,K,M,Z,K,G,N,R,Y
+O,Q,E,N,T,Q,B,X,A,F,V,S,Z,S,V,P,E,R,G,D,A,W,K,G,C
+V,A,D,R,I,J,Y,V,N,D,X,I,X,A,K,Y,K,Q,S,F,S,E,Y,E,I
+Q,J,T,F,X,N,H,L,P,T,A,O,G,R,X,T,I,D,H,Y,A,C,L,U,Z
+A,H,V,D,U,S,A,Z,K,V,G,K,W,L,C,A,R,A,U,V,U,D,F,V,P
+Q,W,A,P,C,E,L,T,R,U,T,Y,P,M,Y,V,X,L,K,E,C,O,P,B,T
+B,Y,T,O,K,S,A,J,I,J,P,W,A,C,Q,R,C,F,U,H,L,F,U,A,Q
+M,J,A,E,Q,D,K,R,Q,R,O,M,I,K,E,X,S,E,C,W,E,P,T,S,Y
+X,K,Q,B,H,T,Q,A,I,N,T,H,G,R,F,A,Z,U,Q,D,B,K,D,G,T
+
+"Find these words: CAT, DOG, DONKEY, GOAT, HORSE, PIG, SHEEP, TURTLE"
+"* Words can go N, NE, E, SE, S, SW, W, and NW."
+
+"Answer Key: CAT E @ (2, 7), DOG SE @ (1, 20), DONKEY SW @ (14, 21), GOAT W @ (20, 13), HORSE SE @ (6, 20), PIG N @ (6, 23), SHEEP E @ (16, 1), TURTLE W @ (22, 11)"
