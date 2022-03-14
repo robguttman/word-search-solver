@@ -28,7 +28,7 @@ class Puzzle:
             lines = f.readlines()
 
         # find grid
-        for line in lines[2:]:
+        for line in lines[3:]:
             row = line.strip("\n").split(",")
             if len(row) <= 1:
                 break
@@ -44,7 +44,9 @@ class Puzzle:
         # find answers (used to validate the solution)
         for line in lines:
             if "Answer Key:" in line:
-                self.answers = dict(re.findall(r"([A-Z]+) ([NSEW]{1,2} @ \([0-9]+, [0-9]+\))", line))
+                self.answers = dict(
+                    re.findall(r"([A-Z]+) ([NSEW]{1,2} @ \([0-9]+, [0-9]+\))", line)
+                )
                 break
 
         # validate
@@ -68,10 +70,14 @@ class Puzzle:
         """
         if answers:
             header = "** WORD SEARCH PUZZLE: ANSWERS **"
-            words = ", ".join(f"{word} {location}" for word, location in answers.items())
+            words = ", ".join(
+                f"{word} {location}" for word, location in answers.items()
+            )
 
             # create answer grid
-            rows = [["." for _ in range(self.size)] for _ in range(self.size)]  # blank grid
+            rows = [
+                ["." for _ in range(self.size)] for _ in range(self.size)
+            ]  # blank grid
             answer_re = re.compile(r"([NSEW]{1,2}) @ \(([0-9]+), ([0-9]+)\)")
             for word, answer in answers.items():
                 for direction, y, x in answer_re.findall(answer):

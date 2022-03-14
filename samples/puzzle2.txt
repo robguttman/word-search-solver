@@ -1,5 +1,6 @@
-** WORD SEARCH **
-
+-------------------------------------------------
+                   WORD SEARCH                   
+-------------------------------------------------
 V,D,Z,D,L,S,G,I,Y,E,V,D,Y,U,E,Y,B,O,H,D,S,X,V,K,S
 T,Y,E,J,C,V,C,A,T,Q,G,Q,A,H,M,P,W,Y,R,L,O,P,J,D,B
 Q,O,T,S,F,K,W,K,G,Y,I,H,W,N,J,R,G,J,Q,B,D,G,O,M,I
