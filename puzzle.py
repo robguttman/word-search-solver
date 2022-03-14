@@ -65,8 +65,9 @@ class Puzzle:
         Answer syntax is as found in https://github.com/joshbduncan/word-search-generator
         Example: "E @ (12, 6)" means start at y=12, x=6 (1-indexed) and read Eastward
         """
-        header = "** WORD SEARCH PUZZLE **"
         if answers:
+            header = "** WORD SEARCH PUZZLE: ANSWERS **"
+
             # create answer grid
             rows = [["." for _ in range(self.size)] for _ in range(self.size)]  # blank grid
             answer_re = re.compile(r"([NSEW]{1,2}) @ \(([0-9]+), ([0-9]+)\)")
@@ -79,6 +80,7 @@ class Puzzle:
                         y += self.DIRECTIONS[direction]["y"]
             words = ", ".join(f"{word} {location}" for word, location in answers.items())
         else:
+            header = "** WORD SEARCH PUZZLE **"
             rows = self.rows
             words = ", ".join(self.words)
         grid = "\n".join(" ".join(cell for cell in row) for row in rows)
