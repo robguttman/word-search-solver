@@ -1,0 +1,44 @@
+{
+	"puzzle": [
+		["A", "H", "F", "A", "N", "T", "G", "A", "Y", "M", "O", "Q"],
+		["O", "N", "S", "Z", "O", "A", "H", "S", "U", "W", "D", "K"],
+		["K", "G", "Y", "K", "X", "N", "D", "Y", "Z", "C", "R", "M"],
+		["I", "Z", "U", "R", "D", "L", "I", "B", "K", "L", "D", "B"],
+		["M", "Q", "C", "T", "N", "J", "S", "G", "U", "Z", "X", "E"],
+		["C", "R", "N", "U", "M", "D", "E", "M", "T", "H", "B", "H"],
+		["A", "A", "I", "R", "O", "J", "L", "P", "D", "E", "Z", "E"],
+		["T", "B", "P", "T", "G", "C", "T", "N", "A", "M", "O", "T"],
+		["H", "B", "I", "L", "J", "D", "L", "O", "S", "I", "Y", "X"],
+		["X", "I", "G", "E", "A", "W", "V", "P", "W", "J", "U", "E"],
+		["M", "T", "D", "O", "N", "K", "E", "Y", "I", "E", "V", "Z"],
+		["J", "I", "S", "G", "B", "U", "V", "R", "A", "U", "R", "C"]
+	],
+	"words": ["RABBIT", "DONKEY", "TURTLE", "PIG", "CAT"],
+	"key": {
+		"RABBIT": {
+			"start_row": 6,
+			"start_col": 2,
+			"direction": "S"
+		},
+		"DONKEY": {
+			"start_row": 11,
+			"start_col": 3,
+			"direction": "E"
+		},
+		"TURTLE": {
+			"start_row": 5,
+			"start_col": 4,
+			"direction": "S"
+		},
+		"PIG": {
+			"start_row": 8,
+			"start_col": 3,
+			"direction": "S"
+		},
+		"CAT": {
+			"start_row": 6,
+			"start_col": 1,
+			"direction": "S"
+		}
+	}
+}

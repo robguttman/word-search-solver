@@ -1,3 +1,4 @@
+import json
 import re
 
 
@@ -20,38 +21,14 @@ class Puzzle:
 
     def __init__(self, path):
         """
-        Load a puzzle from a text file in the format produced by
+        Load a puzzle from a json file in the format produced by
         https://github.com/joshbduncan/word-search-generator
         """
-        self.rows = []
         with open(path, "r") as f:
-            lines = f.readlines()
-
-        # find grid
-        for line in lines[2:]:
-            row = line.strip("\n").split(",")
-            if len(row) <= 1:
-                break
-            self.rows.append(row)
-
-        # find words
-        for line in lines:
-            if "Find these words:" in line:
-                part = line.split(":", 1)[1].strip(' "\n')
-                self.words = part.split(", ")
-                break
-
-        # find answers (used to validate the solution)
-        for line in lines:
-            if "Answer Key:" in line:
-                self.answers = dict(re.findall(r"([A-Z]+) ([NSEW]{1,2} @ \([0-9]+, [0-9]+\))", line))
-                break
-
-        # validate
-        if not self.rows:
-            raise Exception("rows not found")
-        if not self.words:
-            raise Exception("words not found")
+            data = json.load(f)
+        self.rows = data["puzzle"]
+        self.words = data["words"]
+        self.answers = {w: f"{k['direction']} @ ({k['start_row']}, {k['start_col']})" for w, k in data["key"].items()}
 
     def __str__(self):
         return f"Puzzle: {self.size} size, {len(self.words)} words"
