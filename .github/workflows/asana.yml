@@ -1,0 +1,10 @@
+name: Asana
+
+on:
+  push:
+    branches: [ '**' ]
+
+jobs:
+  asana:
+    uses: robguttman/common/.github/workflows/asana.yml@develop
+    secrets: inherit

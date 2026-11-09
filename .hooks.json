@@ -1,0 +1,5 @@
+{
+  "commit-msg": ["check-ref"],
+  "pre-commit": ["lint-python", "ruff-python"],
+  "update": ["lint-python"]
+}
